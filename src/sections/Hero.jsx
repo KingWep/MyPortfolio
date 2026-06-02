@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import {
   FiDownload,
   FiArrowRight,
@@ -109,27 +108,27 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-wrap gap-3 pt-2">
-            <Link
-              to="/projects"
+            <a
+              href="#projects"
               className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-[oklch(0.65_0.25_295)] to-[oklch(0.62_0.22_260)] px-6 py-3 text-sm font-semibold text-white shadow-[0_0_30px_oklch(0.65_0.25_295/0.5)] hover:shadow-[0_0_45px_oklch(0.65_0.25_295/0.85)] transition"
             >
               View Projects
               <FiArrowRight className="transition group-hover:translate-x-1" />
-            </Link>
+            </a>
 
-            <Link
-              to="/about"
+            <a
+              href="#about"
               className="inline-flex items-center gap-2 rounded-xl glass-strong px-6 py-3 text-sm font-semibold text-foreground hover:bg-white/10 transition"
             >
               <FiDownload /> About Me
-            </Link>
+            </a>
 
-            <Link
-              to="/contact"
+            <a
+              href="#contact"
               className="inline-flex items-center gap-2 rounded-xl border border-white/15 px-6 py-3 text-sm font-semibold text-foreground hover:border-[oklch(0.65_0.25_295)] hover:text-[oklch(0.78_0.18_295)] transition"
             >
               <FiMail /> Contact Me
-            </Link>
+            </a>
           </div>
 
           <div className="flex items-center gap-8 pt-6 text-sm text-muted-foreground">

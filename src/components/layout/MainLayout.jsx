@@ -13,7 +13,7 @@ export default function MainLayout() {
 
       <Navbar />
 
-      <main className="relative z-10 pt-6">
+      <main className="relative z-10 pt-[var(--nav-offset)]">
         <Outlet />
       </main>
 
