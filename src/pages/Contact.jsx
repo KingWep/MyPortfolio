@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiMail, FiSend, FiMapPin, FiPhone } from "react-icons/fi";
-import { SiGithub, SiX, SiFacebook, SiTelegram } from "react-icons/si";
+import { SiGithub, SiInstagram, SiFacebook, SiTelegram } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 
 const socials = [
-  { Icon: SiGithub, href: "#", label: "GitHub" },
-  { Icon: FaLinkedin, href: "#", label: "LinkedIn" },
-  { Icon: SiTelegram, href: "#", label: "Telegram" },
-  { Icon: SiFacebook, href: "#", label: "Facebook" },
-  { Icon: SiX, href: "#", label: "X" },
+  { Icon: SiGithub, href: "https://github.com/KingWep", label: "GitHub" },
+  { Icon: FaLinkedin, href: "https://www.linkedin.com/in/leng-chantha-460b59385?utm_source=share_via&utm_content=profile&utm_medium=member_ios", label: "LinkedIn" },
+  { Icon: SiTelegram, href: "https://t.me/johnwickk168", label: "Telegram" },
+  { Icon: SiFacebook, href: "https://facebook.com/tha.nevercare.168", label: "Facebook" },
+  { Icon: SiInstagram, href: "https://www.instagram.com/tha.minidev/", label: "Instagram" },
 ];
 
 export default function Contact() {
@@ -43,8 +43,8 @@ export default function Contact() {
             className="lg:col-span-2 space-y-4"
           >
             {[
-              { Icon: FiMail, label: "Email", val: "lengchantha@email.com" },
-              { Icon: FiPhone, label: "Phone", val: "+855 12 345 678" },
+              { Icon: FiMail, label: "Email", val: "thaneverlose168@email.com" },
+              { Icon: FiPhone, label: "Phone", val: "+855 96 51 34 829" },
               { Icon: FiMapPin, label: "Location", val: "Phnom Penh, Cambodia" },
             ].map((it) => {
               const Icon = it.Icon;
