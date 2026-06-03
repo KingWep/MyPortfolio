@@ -18,7 +18,6 @@ import {
 import portrait from "../assets/Profile/LengChantha.jpg";
 
 const roles = [
-  "C Developer",
   "React Developer",
   "Laravel Developer",
   "Fullstack Developer",
@@ -137,7 +136,7 @@ export default function Hero() {
               Years coding
             </div>
             <div>
-              <span className="block text-2xl font-bold text-foreground">15+</span>
+              <span className="block text-2xl font-bold text-foreground">6+</span>
               Projects built
             </div>
             <div>
