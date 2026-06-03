@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Loader from "../../sections/Loader";
 import Navbar from "./Navbar";
 import Particles from "../../sections/Particles";
+import { Toaster } from "../ui/sonner";
 
 export default function MainLayout() {
   return (
@@ -18,6 +19,7 @@ export default function MainLayout() {
       </main>
 
       <Footer />
+      <Toaster />
     </div>
   );
 }

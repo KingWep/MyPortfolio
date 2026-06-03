@@ -89,9 +89,14 @@ export default function Navbar() {
           }`}
         >
           <a href="#home" className="group flex items-center gap-3">
-            <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-[oklch(0.65_0.25_295)] to-[oklch(0.62_0.22_260)] text-sm font-bold text-white shadow-[0_0_24px_oklch(0.65_0.25_295/0.5)]">
+            {/* <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-[oklch(0.65_0.25_295)] to-[oklch(0.62_0.22_260)] text-sm font-bold text-white shadow-[0_0_24px_oklch(0.65_0.25_295/0.5)]">
               LC
-            </span>
+            </span> */}
+            <img
+              src="/images/profile.JPG"
+              alt="LENG CHANTHA"
+              className="h-10 w-10 rounded-full border-2 border-white/10"
+            />
             <span className="text-sm font-semibold tracking-[0.2em] text-foreground transition group-hover:text-gradient">
               LENG CHANTHA
             </span>

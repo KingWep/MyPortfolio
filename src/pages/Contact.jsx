@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { FiMail, FiSend, FiMapPin, FiPhone } from "react-icons/fi";
 import { SiGithub, SiInstagram, SiFacebook, SiTelegram } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
+import {useRef, useState} from "react";
+import { toast } from "sonner";
 
 const socials = [
   { Icon: SiGithub, href: "https://github.com/KingWep", label: "GitHub" },
@@ -13,7 +15,36 @@ const socials = [
 ];
 
 export default function Contact() {
+  const form = useRef();
   const [sent, setSent] = useState(false);
+
+  const sendEmail = (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(form.current);
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        name: formData.get("name"),
+        email: formData.get("email"),
+        subject: formData.get("subject"),
+        message: formData.get("message"),
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+    .then(() => {
+      setSent(true);
+      // clear form and show success toast
+      if (form.current) form.current.reset();
+      toast.success("Message sent");
+      setTimeout(() => setSent(false), 2500);
+    })
+    .catch((err) => {
+      console.log(err);
+      toast.error("Failed to send message");
+    });
+  };
 
   return (
     <section id="contact" className="relative py-24">
@@ -89,20 +120,32 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            onSubmit={(e) => {
-              e.preventDefault();
-              setSent(true);
-              setTimeout(() => setSent(false), 2500);
-            }}
-            className="lg:col-span-3 rounded-2xl glass-strong neon-border p-6 sm:p-8 space-y-4"
+            ref={form}
+            onSubmit={sendEmail}
+            className="lg:col-span-3 rounded-2xl glass-strong  p-6 sm:p-8 space-y-4"
           >
             <div className="grid sm:grid-cols-2 gap-4">
-              <Field label="Name" id="name" placeholder="Your name" />
-              <Field label="Email" id="email" type="email" placeholder="you@email.com" />
+              <Field
+                label="Name"
+                id="name"
+                name="name"
+                placeholder="Your name"
+              />
+              <Field
+                label="Email"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@email.com"
+              />
             </div>
 
-            <Field label="Subject" id="subject" placeholder="Project inquiry" />
-
+              <Field
+                label="Subject"
+                id="subject"
+                name="subject"
+                placeholder="Project inquiry"
+              />
             <div>
               <label
                 htmlFor="msg"
@@ -113,6 +156,7 @@ export default function Contact() {
 
               <textarea
                 id="msg"
+                name="message"
                 rows={5}
                 required
                 placeholder="Tell me about your project..."
@@ -132,7 +176,7 @@ export default function Contact() {
                 <>
                   Send Message <FiSend className="transition group-hover:translate-x-1" />
                 </>
-              )}
+              )}   
             </motion.button>
           </motion.form>
         </div>
@@ -141,7 +185,7 @@ export default function Contact() {
   );
 }
 
-function Field({ label, id, type = "text", placeholder }) {
+function Field({ label, id, name, type = "text", placeholder }) {
   return (
     <div>
       <label
@@ -153,6 +197,7 @@ function Field({ label, id, type = "text", placeholder }) {
 
       <input
         id={id}
+        name={name}
         type={type}
         required
         placeholder={placeholder}
