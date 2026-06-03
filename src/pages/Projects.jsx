@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Room Rental Management System",
     desc: "Full-stack rental system with admin/user roles, booking management, payments, and cloud image storage.",
-    image: "public/Images/roomrentalsproject.png",
+    image: "../src/assets/images/roomrentalsproject.png",
     stack: ["Laravel", "PostgreSQL", "Bootstrap", "Tailwind CSS", "Cloudinary", "Render"],
     gradient: "from-[#8B5CF6] to-[#3B82F6]",
     github: "https://github.com/KingWep/KhmerRoom",
@@ -14,7 +14,7 @@ const projects = [
   {
     title: "Burger King Clone",
     desc: "Modern restaurant web UI featuring product showcase, smooth interactions, and responsive design for an engaging user experience.",
-    image: "public/Images/burgerkingproject.png",
+    image: "../src/assets/images/burgerkingproject.png",
     stack: ["React", "Tailwind", "Swipper"],
     gradient: "from-[#F97316] to-[#EF4444]",
     github: "https://github.com/KingWep/BugerKing",
@@ -23,7 +23,7 @@ const projects = [
   {
     title: "Eshop Admin Panel",
     desc: "Admin dashboard for managing products, orders, and users with Java Spring Boot API integration and secure data handling.",
-    image: "public/Images/eshopproject.png",
+    image: "../src/assets/images/eshopproject.png",
     stack: ["React", "Tailwind", "Spring Boot(API)", "Framer Motion"],
     gradient: "from-[#A855F7] to-[#EC4899]",
     github: "https://github.com/KingWep/EShop",
@@ -32,7 +32,7 @@ const projects = [
   {
     title: "LENG-CHANTHA Portfolio",
     desc: "Personal portfolio showcasing projects, skills, and experience with smooth animations.",
-    image: "public/Images/lengchanthaportfolio.png",
+    image: "../src/assets/images/lengchanthaportfolio.png",
     stack: ["React.js", "Tailwind CSS", "Framer Motion"],
     gradient: "from-[#10B981] to-[#3B82F6]",
     github: "https://github.com/KingWep/MyPortfolio",
@@ -41,7 +41,7 @@ const projects = [
   {
     title: "Velora Shop",
     desc: "Modern e-commerce UI built with React and Tailwind for seamless browsing experience.",
-    image: "public/Images/velorashopproject.png",
+    image: "../src/assets/images/velorashopproject.png",
     stack: ["React.js", "Tailwind CSS"],
     gradient: "from-[#06B6D4] to-[#3B82F6]",
     github: "https://github.com/KingWep/VeloraShop",
@@ -50,7 +50,7 @@ const projects = [
   {
     title: "Ceramic Shop",
     desc: "Static website with authentication flow including login, register, and password reset.",
-    image: "public/Images/ceramicshopproject.png",
+    image: "../src/assets/images/ceramicshopproject.png",
     stack: ["HTML", "CSS", "JavaScript"],
     gradient: "from-[#F97316] to-[#EF4444]",
     github: "https://github.com/KingWep/Ceramic-Shop",
