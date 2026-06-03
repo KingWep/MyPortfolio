@@ -9,29 +9,29 @@ const groups = [
   {
     title: "Languages",
     items: [
-      { name: "C", Icon: SiC, color: "#A8B9CC", level: 80 },
-      { name: "C++", Icon: SiCplusplus, color: "#00599C", level: 75 },
-      { name: "JavaScript", Icon: SiJavascript, color: "#F7DF1E", level: 90 },
+      { name: "C", Icon: SiC, color: "#A8B9CC", level: 75 },
+      { name: "C++", Icon: SiCplusplus, color: "#00599C", level: 85 },
+      { name: "JavaScript", Icon: SiJavascript, color: "#F7DF1E", level:85 },
       { name: "PHP", Icon: SiPhp, color: "#777BB4", level: 85 },
     ],
   },
   {
     title: "Frontend",
     items: [
-      { name: "HTML", Icon: SiHtml5, color: "#E34F26", level: 95 },
-      { name: "CSS", Icon: SiCss, color: "#1572B6", level: 90 },
-      { name: "Bootstrap", Icon: SiBootstrap, color: "#7952B3", level: 85 },
-      { name: "Tailwind", Icon: SiTailwindcss, color: "#38BDF8", level: 92 },
-      { name: "React JS", Icon: SiReact, color: "#61DAFB", level: 90 },
+      { name: "HTML", Icon: SiHtml5, color: "#E34F26", level: 90 },
+      { name: "CSS", Icon: SiCss, color: "#1572B6", level: 85 },
+      { name: "Bootstrap", Icon: SiBootstrap, color: "#7952B3", level: 75 },
+      { name: "Tailwind", Icon: SiTailwindcss, color: "#38BDF8", level: 85 },
+      { name: "React JS", Icon: SiReact, color: "#61DAFB", level: 85 },
     ],
   },
   {
     title: "Backend & DB",
     items: [
-      { name: "Laravel", Icon: SiLaravel, color: "#FF2D20", level: 85 },
+      { name: "Laravel", Icon: SiLaravel, color: "#FF2D20", level: 80 },
       { name: "MySQL", Icon: SiMysql, color: "#4479A1", level: 85 },
-      { name: "PostgreSQL", Icon: SiPostgresql, color: "#4169E1", level: 75 },
-      { name: "GitHub", Icon: SiGithub, color: "#ffffff", level: 88 },
+      { name: "PostgreSQL", Icon: SiPostgresql, color: "#4169E1", level: 80 },
+      { name: "GitHub", Icon: SiGithub, color: "#ffffff", level: 85 }
     ],
   },
 ];
