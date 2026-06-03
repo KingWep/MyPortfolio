@@ -1,12 +1,12 @@
 import { FaLinkedin } from "react-icons/fa";
-import { SiFacebook, SiGithub, SiTelegram, SiX } from "react-icons/si";
+import { SiFacebook, SiGithub, SiTelegram, SiInstagram } from "react-icons/si";
 
 const socials = [
-  { Icon: SiGithub, href: "https://github.com", label: "GitHub" },
-  { Icon: FaLinkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { Icon: SiTelegram, href: "https://telegram.org", label: "Telegram" },
-  { Icon: SiFacebook, href: "https://facebook.com", label: "Facebook" },
-  { Icon: SiX, href: "https://x.com", label: "X" },
+  { Icon: SiGithub, href: "https://github.com/KingWep", label: "GitHub" },
+  { Icon: FaLinkedin, href: "https://www.linkedin.com/in/leng-chantha-460b59385?utm_source=share_via&utm_content=profile&utm_medium=member_ios", label: "LinkedIn" },
+  { Icon: SiTelegram, href: "https://t.me/johnwickk168", label: "Telegram" },
+  { Icon: SiFacebook, href: "https://facebook.com/tha.nevercare.168", label: "Facebook" },
+  { Icon: SiInstagram, href: "https://www.instagram.com/tha.minidev/", label: "Instagram" },
 ];
 
 export default function Footer() {
