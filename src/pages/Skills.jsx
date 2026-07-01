@@ -11,7 +11,7 @@ const groups = [
     items: [
       { name: "C", Icon: SiC, color: "#A8B9CC", level: 75 },
       { name: "C++", Icon: SiCplusplus, color: "#00599C", level: 85 },
-      { name: "JavaScript", Icon: SiJavascript, color: "#F7DF1E", level:85 },
+      { name: "JavaScript", Icon: SiJavascript, color: "#F7DF1E", level:80 },
       { name: "PHP", Icon: SiPhp, color: "#777BB4", level: 85 },
     ],
   },

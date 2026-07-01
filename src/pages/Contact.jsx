@@ -74,7 +74,7 @@ export default function Contact() {
             className="lg:col-span-2 space-y-4"
           >
             {[
-              { Icon: FiMail, label: "Email", val: "thaneverlose168@email.com" },
+              { Icon: FiMail, label: "Email", val: "lengchanthaa168@email.com" },
               { Icon: FiPhone, label: "Phone", val: "+855 96 51 34 829" },
               { Icon: FiMapPin, label: "Location", val: "Phnom Penh, Cambodia" },
             ].map((it) => {
