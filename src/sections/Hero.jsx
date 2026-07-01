@@ -15,7 +15,7 @@ import {
   SiCplusplus,
   SiGithub,
 } from "react-icons/si";
-import portrait from "../assets/Profile/LengChantha.jpg";
+import portrait from "../assets/Profile/leng.chantha.JPG";
 
 const roles = [
   "React Developer",

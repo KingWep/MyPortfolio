@@ -51,7 +51,7 @@ export default function About() {
 
             <div className="mt-6 grid grid-cols-2 gap-4 text-sm">
               <div><span className="text-muted-foreground">Name:</span> <span className="font-medium">Leng Chantha</span></div>
-              <div><span className="text-muted-foreground">Role:</span> <span className="font-medium">Junior Developer</span></div>
+              <div><span className="text-muted-foreground">Role:</span> <span className="font-medium">Internship Developer</span></div>
               <div><span className="text-muted-foreground">Location:</span> <span className="font-medium">Cambodia</span></div>
               <div><span className="text-muted-foreground">Status:</span> <span className="font-medium text-emerald-400">Available</span></div>
             </div>
